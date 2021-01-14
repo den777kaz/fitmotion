@@ -1,0 +1,69 @@
+.hero {
+  padding: 250px 0;
+
+  .hero__content {
+    z-index: 2;
+
+    .hero__text {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .hero__graphic {
+    z-index: 1;
+      img {
+        position: absolute;
+      }
+
+
+    .ellipse {
+      top: 375px;
+      left: -320px;
+      width: 720px;
+      height: 720px;
+      z-index: 1;
+    }
+    .arms {
+      top: 110px;
+      right: 0;
+      width: 50%;
+      max-width: 700px;
+      height: auto;
+    }
+    .wave{
+      z-index: 2;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 180%;
+      height: 380px;
+      //bottom: -200px;
+      top: 90%;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 100px 0 0 0;
+    //height: 90vh;
+
+    .hero__graphic {
+      .wave {
+        height: 200px;
+        //bottom: -250px;
+        top: 109%;
+      }
+      .ellipse {
+        width: 500px;
+        height: 500px;
+        left: -25%;
+        top: 250px;
+      }
+      .arms {
+        top: 60px;
+      }
+  }
+
+  }
+}

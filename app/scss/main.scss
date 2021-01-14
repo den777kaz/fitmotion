@@ -1,0 +1,41 @@
+// Fonts
+@import "./fonts";
+
+//Custom Theme
+@import "./customTheme";
+
+//bootstrap 5
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+// Own styles
+// global
+@import "./global";
+
+//typography
+@import "./typography";
+
+//blocks
+@import "./blocks/header";
+@import "./blocks/hero";
+@import "./blocks/cta-start";
+@import "./blocks/banner";
+@import "./blocks/review";
+@import "./blocks/check";
+@import "./blocks/recommend";
+@import "./blocks/game-wheel";
+
+
+
+@import "./footer";
+
+
+
+
+
+//Components
+@import "./components/quote-card";
+@import "./components/line-behindText";
+
+
+

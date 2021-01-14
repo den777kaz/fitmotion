@@ -1,0 +1,15 @@
+.review {
+  padding: 10rem 0;
+
+  .review__bg-graphic {
+
+    img {
+      width: 100%;
+    }
+    z-index: 0;
+    position: absolute;
+    width: 900px;
+    left: -530px;
+    top: -510px;
+  }
+}

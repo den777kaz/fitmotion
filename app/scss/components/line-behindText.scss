@@ -1,0 +1,20 @@
+/* Line behind Text */
+.line--behind {
+  span {
+    position: relative;
+    z-index: 1;
+    line-height: inherit;
+
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      width: 104%;
+      height: 30px;
+      left: 0;
+      bottom: 10px;
+
+      background-color: $secondary;
+    }
+  }
+}
