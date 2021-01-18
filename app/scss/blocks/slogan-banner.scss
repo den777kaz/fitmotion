@@ -1,4 +1,6 @@
-.banner {
+.slogan-banner {
+  position: relative;
+  background-color: black;
   background-image: url("../../images/dest/home/Gruppe_173.png");
   background-size: cover;
   background-position: center;
@@ -41,21 +43,5 @@
       font-size: 60px;
       line-height: 80px;
     }
-  }
-}
-
-.banner-game {
-
-  background-image: url("../../images/dest/gruppe119.png");
-
-  &:after {
-    background-image: none;
-    background-color: rgba(0,0,0, .6);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -2;
-
   }
 }

@@ -1,0 +1,75 @@
+.game-banner {
+  padding-top: 100px;
+  position: relative;
+  background-image: url("../../images/dest/gruppe119.png");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  min-height: 50vh;
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+  }
+  &:before {
+    background: url("../../images/dest/bg-overlay-top.svg");
+    height: 150px;
+    top: -100px;
+    right: 0;
+
+  }
+  &:after {
+    background-color: rgba(0,0,0, .6);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+}
+
+.game__text {
+  color: white;
+  h2 {
+
+    font-size: 140px;
+    line-height: 130px;
+    text-transform: none;
+  }
+
+  p {
+    font-size: 50px;
+    line-height: 55px;
+    text-shadow: 0 0 11px #f7f36fba;
+  }
+}
+
+.game__question {
+  color: black;
+  text-align: left;
+  background-color: $secondary;
+
+  padding: 50px;
+
+  @media (min-width:1200px) {
+    position: absolute;
+    z-index: 3;
+    top: 58%;
+    right: 0;
+    padding: 28px 67px 150px 108px;
+    width: 958px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 13% 74%);
+  }
+
+  .title {
+    font-size: 64px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 36px;
+    line-height: 43px;
+  }
+}

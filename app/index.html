@@ -105,7 +105,7 @@
     </section>
 
 <!-- -------------------------section 3 BANNER--------------------------------------   -->
-    <section class="banner position-relative container-fluid text-center d-flex align-items-center justify-content-center">
+    <section class="slogan-banner position-relative container-fluid text-center d-flex align-items-center justify-content-center">
       <h2>überzeuge dich selbst</h2>
     </section>
 
@@ -303,27 +303,43 @@
     </section>
 
 <!-- -------------------------section 7 game --------------------------------------   -->
-    <section class="banner banner-game position-relative container-fluid text-center d-flex align-items-center justify-content-center">
-      <div class="container maxW1600">
+    <section class="game-banner">
+      <div class="container-fluid maxW1600">
         <div class="row">
 
-          <div class="col-xl-6">
-            <div class="game-wheel">
-                <img class="border-bg" src="./images/dest/rad.png" alt="">
-                <img class="main-bg" src="./images/dest/rad-bg.png" alt="">
-                <button >Jetzt Drehen</button>
-            </div>
-          </div>
-
-          <div class="col-xl-6">
-            <h2 class="">Fitness Glücksrad</h2>
-            <p>
+          <div class="game__text text-center text-xl-start col-xl-6 pb-5 order-xl-2">
+            <h2 class="mb-3">Fitness Glücksrad</h2>
+            <p class="">
               Heute schon am Rad gedreht?
             </p>
           </div>
+
+          <div class="game__question">
+            <h2 class="mb-5">Schon mal was gewonnen?</h2>
+
+            <div class="position-relative ms-5 ps-3">
+              <p class="fw-bold">Hauptgewinn: 6 Monate kostenlose PREMIUM-Mitgliedschaft!</p>
+              <p>Bei uns gewinnt jeder! Dreh eine Runde am Glücksrad.</p>
+              <p>Aber Achtung！Du hast nur einen Versuch!</p>
+              <img class="position-absolute bottom-100 end-100" src="./images/dest/Icon%20feather-arrow-down-right.svg" alt="arrow">
+            </div>
+          </div>
+
+          <div class="col-xl-6 d-flex justify-content-evenly order-xl-1">
+            <div class="game-wheel">
+              <img class="border-bg" src="./images/dest/rad.png" alt="">
+              <img class="main-bg" src="./images/dest/rad-bg.png" alt="">
+              <button >Jetzt Drehen</button>
+            </div>
+          </div>
+
+
+
+
         </div>
 
       </div>
+
     </section>
 
 <!-- -------------------------section 8--------------------------------------   -->
@@ -340,13 +356,14 @@
       </div>
     </section>
 <!-- -------------------------section 9--------------------------------------   -->
+   
   </main>
 
   <!-- -------------------------FOOTER--------------------------------------   -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-wrap">
-        <div class="footer__contact footer__item">
+      <div class="footer-wrap row a">
+        <div class="footer__contact footer__item col-sm-6 col-lg-3 mb-3">
           <h5>Kontakt & Anfahrt</h5>
           <ul>FINEST FITNESS
             <li>Mühlheimer Straße 209</li>
@@ -359,7 +376,7 @@
             <li><a href="mailto:kontakt@finest-fit.de">kontakt@finest-fit.de</a></li>
           </ul>
         </div>
-        <div class="footer__hours footer__item">
+        <div class="footer__hours footer__item col-sm-6 col-lg-3 mb-3">
           <h5>Öffnungszeiten</h5>
           <ul>Mo, Mi, Fr:
             <li>08:00 Uhr – 22:00 Uhr</li>
@@ -377,16 +394,16 @@
             <li>10:00 Uhr – 16:00 Uhr</li>
           </ul>
         </div>
-        <div class="footer__follow footer__item">
+        <div class="footer__follow footer__item  col-sm-6 col-lg-3 mb-3">
           <h5>Folge uns!</h5>
           <div class="follow_list">
             <ul>
-              <li><a href="#"><img src="./img/facebookIcon.svg" alt="facebook"></a></li>
-              <li><a href="#"><img src="./img/instagramIcon.png" alt="instagram"></a></li>
+              <li><a href="#"><img src="./images/dest/facebookIcon.svg" alt="facebook"></a></li>
+              <li><a href="#"><img src="./images/dest/instagramIcon.png" alt="instagram"></a></li>
             </ul>
           </div>
         </div>
-        <div class="footer__rights footer__item">
+        <div class="footer__rights footer__item col-sm-6 col-lg-3 mb-3">
           <h5>Rechtliches</h5>
           <ul class="rights__list">
             <li><a href="#">Datenschutz</a></li>

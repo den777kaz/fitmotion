@@ -1,4 +1,4 @@
-$wheel-size: 500px;
+$wheel-size: 600px;
 .game-wheel {
   position: relative;
   display: flex;
@@ -20,7 +20,7 @@ $wheel-size: 500px;
     transform-origin: center;
   }
   .main-bg {
-    z-index: -1;
+    z-index: 0;
     animation: wheel-rotate 5s ease-in-out infinite;
   }
   button {
