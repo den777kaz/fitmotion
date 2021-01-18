@@ -1,6 +1,6 @@
 .check {
   position: relative;
-  //padding: 2rem 0 2rem 0;
+  padding: 2rem 0 10rem 0;
   //min-height: 100vh;
 
   &__check {
@@ -11,111 +11,125 @@
     width: 117px;
     height: 117px;
   }
-  .check-list {
 
-    .item {
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
 
-      p {
-        max-width: 320px;
-        font-size: 20px;
-        margin: 0;
-      }
+}
 
-      & > img {width: 30px; margin-right: 10px}
-    }
+//.check-list {
+//
+//  .item {
+//    display: flex;
+//    align-items: center;
+//    margin-bottom: 10px;
+//
+//    p {
+//      max-width: 320px;
+//      font-size: 20px;
+//      margin: 0;
+//    }
+//
+//    & > img {width: 30px; margin-right: 10px}
+//  }
+//}
+
+//GRAPHIC
+.check__graphic {
+  position: relative;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 650px;
+  height: 650px;
+
+  @media (max-width: 1300px) {
+    width:450px;
+    height: 450px;
   }
-
-  //GRAPHIC
-  .check__graphic {
+  @media (min-width: 1921px) {
     position: relative;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    width: 650px;
-    height: 650px;
-
-    @media (max-width: 1300px) {
-      width:450px;
-      height: 450px;
-    }
-    @media (min-width: 1921px) {
-      position: relative;
-    }
-    @media (min-width: 1300px) and (max-width: 1920px) {
+  }
+  @media (min-width: 1300px) and (max-width: 1920px) {
     position: absolute;
   }
 
-    .hexagon {
-      position: relative;
-      width: inherit;
-      height: inherit;
-      top: 0;
-      right: 0;
+  .hexagon {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
 
-      background-color: $secondary;
+    background-color: $secondary;
 
-      -webkit-clip-path: polygon(
-                      25% 5%,
-                      75% 5%,
-                      100% 50%,
-                      75% 95%,
-                      25% 95%,
-                      0% 50%
-      );
-      clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    -webkit-clip-path: polygon(
+                    25% 5%,
+                    75% 5%,
+                    100% 50%,
+                    75% 95%,
+                    25% 95%,
+                    0% 50%
+    );
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
 
-    }
-
-    .hex-image {
-      position: relative;
-      background-image: url(../../images/dest/haxagon-bild.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-      z-index: 2;
-    }
-    .hex-back {
-      position: absolute;
-      z-index: 1;
-      top: 60px;
-      right: -100px;
-    }
-
-    .hex-small-first,
-    .hex-small-second {
-      position: absolute;
-    }
-
-    .hex-small-first {
-      z-index: 3;
-      top: -40px;
-      right: 50px;
-      width: 30%;
-    }
-    .hex-small-second {
-      z-index: 3;
-      width: 50%;
-      bottom: -100px;
-      right: -50px;
-    }
   }
 
+  .hex-image > img {
+    position: relative;
+    display: block;
 
-  .dumbbell {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .hex-back {
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    right: -100px;
+  }
+
+  .hex-small-first,
+  .hex-small-second {
+    position: absolute;
+    animation: hex-rotate 50s infinite linear;
+  }
+
+  .hex-small-first {
+    z-index: 3;
+    top: -40px;
+    right: 50px;
+    width: 30%;
+  }
+  .hex-small-second {
+    z-index: 3;
     width: 50%;
-    max-width: 400px;
-    top: 120%;
-    left: 0;
-    opacity: .5;
-
-    @media (max-width:1022px) {
-      width: 250px;
-      top: 78%;
-      left: auto;
-      right: 6%;
-    }
+    bottom: -100px;
+    right: -50px;
   }
 }
 
+
+.dumbbell {
+  width: 50%;
+  max-width: 400px;
+  top: 120%;
+  left: 0;
+  opacity: .5;
+
+  @media (max-width:1022px) {
+    width: 250px;
+    top: 78%;
+    left: auto;
+    right: 6%;
+  }
+}
+
+
+
+@keyframes hex-rotate {
+  from {
+    transform: rotate(0);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}

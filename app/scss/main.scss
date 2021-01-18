@@ -31,17 +31,18 @@
 //leistungseite
 @import "./blocks/health";
 @import "./blocks/sidebar";
+@import "./blocks/trial-training";
 
 
 @import "./footer";
 
-//components
-@import "components/wave-border";
 
 
 //Components
 @import "./components/quote-card";
 @import "./components/line-behindText";
+@import "components/wave-border";
+@import "components/check-list";
 
 
 
