@@ -38,19 +38,23 @@
   z-index: 1;
   top: 0;
   right: 0;
-  width: 650px;
-  height: 650px;
+  width: 600px;
+  height: 600px;
 
   @media (max-width: 1300px) {
     width:450px;
     height: 450px;
   }
-  @media (min-width: 1921px) {
-    position: relative;
+  @media (max-width: 600px) {
+    width:350px;
+    height: 350px;
   }
-  @media (min-width: 1300px) and (max-width: 1920px) {
-    position: absolute;
-  }
+
+
+
+  //@media (min-width: 100px) and (max-width: 1300px) {
+  //  position: relative;
+  //}
 
   .hexagon {
     position: relative;
@@ -83,8 +87,8 @@
   .hex-back {
     position: absolute;
     z-index: 1;
-    top: 60px;
-    right: -100px;
+    top: 30px;
+    right: -50px;
   }
 
   .hex-small-first,
