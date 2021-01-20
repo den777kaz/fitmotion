@@ -1,5 +1,7 @@
 .hero {
-  padding: 250px 0;
+  position: relative;
+  z-index: 1;
+  padding: 10rem 0;
 
   .hero__content {
     z-index: 2;
@@ -31,15 +33,6 @@
       max-width: 700px;
       height: auto;
     }
-    .wave{
-      z-index: 2;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 180%;
-      height: 380px;
-      //bottom: -200px;
-      top: 90%;
-    }
   }
 }
 
@@ -49,11 +42,7 @@
     //height: 90vh;
 
     .hero__graphic {
-      .wave {
-        height: 200px;
-        //bottom: -250px;
-        top: 109%;
-      }
+
       .ellipse {
         width: 500px;
         height: 500px;
