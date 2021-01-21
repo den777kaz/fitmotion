@@ -1,7 +1,8 @@
 .team {
   position: relative;
   background-color: $secondary;
-  height: 900px;
+  min-height: 900px;
+  padding-bottom: 100px;
 
   &:before, &:after {
     content: "";
@@ -22,7 +23,7 @@
 }
 
 .team__item {
-  position: absolute;
+  position: relative;
   text-align: center;
   z-index: 3;
   width: 350px;
@@ -53,52 +54,66 @@
       color: black;
     }
   }
-  //leftside
-  &:nth-child(1){
-    width: 350px;
-    top: -7%;
-    left: 3%;
-  }
-  &:nth-child(2){
-    width: 490px;
-    top: 13%;
-    left: 23%;
-  }
-  &:nth-child(3){
-    width: 350px;
-    top: 38%;
-    left: -5%;
-  }
-  &:nth-child(4){
-    width: 261px;
-    bottom: 3%;
-    left: 14%;
-  }
-  // rightside
-  &:nth-child(5){
-    width: 321px;
-    top: -7%;
-    left: 50%;
-  }
-  &:nth-child(6){
-    width: 261px;
-    top: 20%;
-    right: 18%;
-  }
-  &:nth-child(7){
-    width: 331px;
-    top: 0;
-    right: -3%;
-  }
-  &:nth-child(8){
-    width: 396px;
-    top: 46%;
-    left: 50%;
-  }
-  &:nth-child(9){
-    width: 286px;
-    top: 54%;
-    right: 6%;
 
+  @media (min-width: 1400px) {
+    position: absolute;
+
+    //leftside
+    &:nth-child(1){
+      $picSize: 300px;
+      width: calc(#{$picSize} + 4vw);
+      top: -7%;
+      left: 3%;
+    }
+    &:nth-child(2){
+      $picSize: 370px;
+      width: calc(#{$picSize} + 4vw);
+      top: 13%;
+      left: 25%;
+    }
+    &:nth-child(3){
+      $picSize: 280px;
+      width: calc(#{$picSize} + 4vw);
+      top: 42%;
+      left: -5%;
+    }
+    &:nth-child(4){
+      $picSize: 200px;
+      width: calc(#{$picSize} + 4vw);
+      bottom: 3%;
+      left: 16%;
+    }
+    // rightside
+    &:nth-child(5){
+      $picSize: 270px;
+      width: calc(#{$picSize} + 4vw);
+      top: -5%;
+      left: 50%;
+    }
+    &:nth-child(6){
+      $picSize: 200px;
+      width: calc(#{$picSize} + 4vw);
+      top: 20%;
+      right: 16%;
+    }
+    &:nth-child(7){
+      $picSize: 260px;
+      width: calc(#{$picSize} + 4vw);
+      top: 0;
+      right: -3%;
+    }
+    &:nth-child(8){
+      $picSize: 290px;
+      width: calc(#{$picSize} + 4vw);
+      top: 46%;
+      left: 50%;
+    }
+    &:nth-child(9){
+      $picSize: 220px;
+      width: calc(#{$picSize} + 4vw);
+      top: 54%;
+      right: 6%;
+
+    }
   }
 }
