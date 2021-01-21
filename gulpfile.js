@@ -20,7 +20,7 @@ function browsersync() {
 
 function scripts() {
   return src([
-    'node_modules/jquery/dist/jquery.min.js',
+    // 'node_modules/jquery/dist/jquery.min.js',
     'app/js/app.js',
   ])
     .pipe(concat('app.min.js'))
