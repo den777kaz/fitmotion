@@ -5,9 +5,37 @@
     h2 {
       font-size: 72px;
       line-height: 86px;
+      min-width: 616px;
 
       position: relative;
-      left: 120px;
+
+      @media (min-width: 1836px) {
+        left: 115px;
+      }
+      @media (max-width: 1835px) {
+        left: 100px;
+      }
+      @media (max-width: 1800px) {
+        left: 70px;
+      }
+      @media (max-width: 1680px) {
+        left: 20px;
+      }
+      @media (max-width: 1545px) {
+        left: 0;
+      }
+      @media (max-width: 653px) {
+        min-width: auto;
+        font-size: 50px;
+        line-height: 1;
+        text-align: right;
+      }
+
+
+    }
+
+    p {
+      //min-width: 400px;
     }
 
   }
@@ -37,6 +65,11 @@
     .img--pos {
       top: 50px;
       left: 100px;
+
+      @media (max-width: 1400px) {
+        top: 20px;
+        left: 3%;
+      }
     }
 
   }
