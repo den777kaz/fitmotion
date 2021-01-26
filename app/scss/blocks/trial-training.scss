@@ -14,7 +14,11 @@
     text-transform: none;
     font-size: 80px;
     max-width: 800px;
-    line-height: 100px;
+    line-height: 1.2;
+
+    @media (max-width: 992px) {
+      font-size: 55px;
+    }
   }
 
   &:before {
