@@ -21,7 +21,8 @@ function browsersync() {
 function scripts() {
   return src([
     // 'node_modules/jquery/dist/jquery.min.js',
-    'app/js/app.js',
+        'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+        'app/js/app.js',
   ])
     .pipe(concat('app.min.js'))
     .pipe(uglify())
