@@ -44,3 +44,19 @@ $btn-border-radius-lg:        0;
 .z-index-3 {
   z-index: 3;
 }
+
+//possitions top
+.top-n-7rem {
+
+  @media (min-width: 1500px) {
+    top: -7rem;
+  }
+}
+
+// images clip paths
+.contact-clip-path {
+  clip-path: url(#svgPath-top-right);
+}
+.news-clip-path {
+  clip-path: url(#svgPath-bottom-left);
+}

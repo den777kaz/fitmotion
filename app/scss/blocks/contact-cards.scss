@@ -1,9 +1,6 @@
 .contact-cards {
   border-radius: 20px;
 
-  @media (min-width: 1500px) {
-    top: 150px;
-  }
   @media (max-width: 1200px) {
     width: 90%;
     margin: auto;

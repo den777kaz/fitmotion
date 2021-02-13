@@ -63,13 +63,21 @@
     position: absolute;
     width: 100%;
     height: 90%;
-    right: 0;
-    top: 17%;
+    //right: 0;
     background-color: $secondary;
 
     @media (min-width: 1400px){
       width: 70%;
     }
 
+  }
+
+  .card__bg-right{
+    right: 0;
+    top: 15%;
+  }
+  .card__bg-left{
+    left: 0;
+    top: 5%;
   }
 }
