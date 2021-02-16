@@ -71,18 +71,22 @@
         </div>
         <div class="col-12 col-xl-9 offset-xl-1">
           <div class="position-relative w-100">
-            <img class="contact-clip-path position-relative z-index-2 img-fluid" src="./images/dest/Gruppe 62.png" alt="dddf">
             <svg height="0" width="0">
               <defs>
-                <clipPath id="svgPath-top-right">
-                  <path d="M1 615.999V1.49902C245.333 1.16569 737.2 0.499073 750 0.499023C786 0.498885 801.965 0.499969 808 35.999C816.5 85.999 859 109.5 871 114.999C880.642 119.418 897 138.5 898.5 150.999C899.353 158.107 894.5 171.5 904.5 189.499C917 202.5 923.167 221.999 924 230.999V615.999H1Z" stroke="black"/>
+                <clipPath id="svgPath-contact">
+                  <path
+                    d="M1 615.999V1.49902C245.333 1.16569 737.2 0.499073 750 0.499023C786 0.498885 801.965 0.499969 808 35.999C816.5 85.999 859 109.5 871 114.999C880.642 119.418 897 138.5 898.5 150.999C899.353 158.107 894.5 171.5 904.5 189.499C917 202.5 923.167 221.999 924 230.999V615.999H1Z"
+                    stroke="black"/>
                 </clipPath>
               </defs>
             </svg>
+            <img class="contact-clip-path bg-danger position-relative z-index-2 img-fluid" src="./images/dest/Gruppe 62.png"
+                 alt="dddf">
 
-<!--            <svg width="927" height="618" viewBox="0 0 927 618" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--              <path d="M1 617V1H786.5C795.667 31.6667 821.773 84.5127 856.5 99.5C904 120 890.585 172 904 184.5C926 205 926 229.5 926 242V617H1Z" stroke="black"/>-->
-<!--            </svg>-->
+
+            <!--            <svg width="927" height="618" viewBox="0 0 927 618" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+            <!--              <path d="M1 617V1H786.5C795.667 31.6667 821.773 84.5127 856.5 99.5C904 120 890.585 172 904 184.5C926 205 926 229.5 926 242V617H1Z" stroke="black"/>-->
+            <!--            </svg>-->
 
             <img class="position-absolute start-50 top-50 z-index-1 img-fluid" src="./images/dest/home/Ellipse.svg"
                  alt="Ellipse">
@@ -171,7 +175,29 @@
     <div class="top-n-7rem position-relative">
       <!-- map-->
       <div class="map position-relative z-index-1">
-        <img class="img-fluid" src="./images/dest/Bildlaufgruppe 2.png" alt="Karte">
+        <!--        <img class="img-fluid" src="./images/dest/Bildlaufgruppe 2.png" alt="Karte">-->
+        <div id="mymap-canvas" style="height: 100%; width: 100%; max-width: 100%">
+          <iframe
+            style="height: 100%; width: 100%; border: 0"
+            frameborder="0"
+            src="https://www.google.com/maps/embed/v1/place?q=Würrtembergerstr.+119+76446+Bruchsal&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+          ></iframe>
+        </div>
+        <a
+          class="codefor-googlemap"
+          rel="nofollow"
+          href="https://www.embed-map.com"
+          id="authorizemap-data"
+        >https://www.embed-map.com</a
+        >
+        <style>
+          #mymap-canvas img {
+            max-width: none !important;
+            background: none !important;
+            font-size: inherit;
+            font-weight: inherit;
+          }
+        </style>
       </div>
       <!-- form-->
       <div class="row pt-5 position-relative z-index-2">
@@ -181,9 +207,9 @@
           </div>
 
           <h2 class="line--behind mb-5 pe-4">
-            <span class="d-xxl-inline-block">VEREINBARE </span>
-            <span>JETZT </span>
-            <span>DEIN </span>
+            <span class="d-xxl-inline-block">VEREINBARE</span>
+            <span> JETZT </span>
+            <span> DEIN</span>
             <span class="d-none d-xxl-inline"> BERATUNGS</span>
             <span class="d-xxl-none">BERATUNGSGESPRÄCH</span>
             <span class="d-none d-xxl-inline"> GESPRÄCH</span>

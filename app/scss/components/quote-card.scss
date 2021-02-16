@@ -96,6 +96,8 @@
 /* SPECIAL AUTHOR QUOTE */
 .quote--special {
   //margin-right: 90px;
+  @media (min-width:768px) {
+
 
   .review__item-quote {
     border: none;
@@ -118,6 +120,7 @@
         left: -35px;
       }
     }
+  }
   }
 }
 

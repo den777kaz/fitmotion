@@ -9,7 +9,20 @@
     z-index: 0;
     position: absolute;
     width: 900px;
-    left: -530px;
-    top: -510px;
+    left: -330px;
+    top: -210px;
+
+    @media (max-width: 768px) {
+      left: -430px;
+      top: -310px;
+      width: 760px;
+    }
+  }
+
+  .side-scroll {
+  @media (max-width: 768px) {
+    overflow-x: auto;
+  }
+
   }
 }

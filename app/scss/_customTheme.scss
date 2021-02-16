@@ -55,8 +55,17 @@ $btn-border-radius-lg:        0;
 
 // images clip paths
 .contact-clip-path {
-  clip-path: url(#svgPath-top-right);
+  clip-path: url(#svgPath-contact);
 }
 .news-clip-path {
-  clip-path: url(#svgPath-bottom-left);
+  clip-path: url(#svgPath-news);
+}
+.about-clip-path-left {
+  clip-path: url(#svgPath-about-bottom-left);
+}
+.about-clip-path-right {
+  clip-path: url(#svgPath-about-bottom-right);
+}
+.courses-clip-path {
+  clip-path: url(#svgPath-courses);
 }
