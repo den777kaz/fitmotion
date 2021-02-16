@@ -125,6 +125,14 @@
     left: auto;
     right: 6%;
   }
+
+  @media (max-width:768px) {
+    width: 250px;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
 }
 
 
